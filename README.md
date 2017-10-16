@@ -23,11 +23,9 @@ curl -O https://.../xmds-*.tar.gz
 openssl sha256 xmds-*.tar.gz
 ```
 
-Make sure that all of the dependencies are correct, and update the Pypi links to the latest versions. (These should all point to `tar.gz` files). Run ` brew install --verbose --debug xmds` to test the new package.
+Make sure that all of the dependencies are correct, and update the Pypi links to the latest versions. (These should all point to `tar.gz` files). Run `brew install --verbose --debug xmds2/xmds2/xmds2` to test the new package.
 
-Ensure the installer works on a fresh MacOS install.
-
-Run `brew test`.
+Ensure the installer works on a fresh MacOS install, and ensure `brew test` works fine.
 
 Create a pull request (here or at the official brew package list.
 
