@@ -50,6 +50,11 @@ class Xmds2 < Formula
     sha256 "cb189bd98b2e7ac02df389b6212846ab20661f4bafe16b5a70a6f1728c1cc7cb"
   end
 
+  # We need lxml to validate the XMDS2 XML scheme
+  resource "lxml" do
+    url "https://pypi.python.org/packages/16/4a/b085a04d6dad79aa5c00c65c9b2bbcb2c6c22e5ac341e7968e0ad2c57e2f/lxml-4.3.0.tar.gz"
+    sha256 "d1e111b3ab98613115a208c1017f266478b0ab224a67bc8eac670fa0bad7d488"
+  end
 
   include Language::Python::Virtualenv
 
