@@ -47,7 +47,7 @@ class Xmds2 < Formula
   # We need numpy for matrix transforms like Hermite-Gauss, Bessel etc
   resource "numpy" do
     url "https://pypi.python.org/packages/04/b6/d7faa70a3e3eac39f943cc6a6a64ce378259677de516bd899dd9eb8f9b32/numpy-1.16.0.zip"
-    sha256 "cb189bd98b2e7ac02df389b6212846ab20661f4bafe16b5a70a6f1728c1cc7cb1"
+    sha256 "cb189bd98b2e7ac02df389b6212846ab20661f4bafe16b5a70a6f1728c1cc7cb"
   end
 
 
