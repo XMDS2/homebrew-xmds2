@@ -56,11 +56,11 @@ class Xmds2beta < Formula
     sha256 "d1e111b3ab98613115a208c1017f266478b0ab224a67bc8eac670fa0bad7d488"
   end
 
-  # We need h5py for xsil2graphics
-  resource "h5py" do
-    url "https://pypi.python.org/packages/43/27/a6e7dcb8ae20a4dbf3725321058923fec262b6f7835179d78ccc8d98deec/h5py-2.9.0.tar.gz"
-    sha256 "9d41ca62daf36d6b6515ab8765e4c8c4388ee18e2a665701fef2b41563821002"
-  end
+  # We need h5py for the testsuite
+  #resource "h5py" do
+  #  url "https://pypi.python.org/packages/43/27/a6e7dcb8ae20a4dbf3725321058923fec262b6f7835179d78ccc8d98deec/h5py-2.9.0.tar.gz"
+  #  sha256 "9d41ca62daf36d6b6515ab8765e4c8c4388ee18e2a665701fef2b41563821002"
+  #end
 
   include Language::Python::Virtualenv
 
