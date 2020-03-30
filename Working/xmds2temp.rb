@@ -5,8 +5,8 @@
 class Xmds2 < Formula
   desc ""
   homepage ""
-  url "https://downloads.sourceforge.net/project/xmds/xmds-3.0.0.tar.gz"
-  sha256 "0ce0355940c75d96cba6c3a4b122e90d62eb7acf5f660deca94156a61629ff47"
+  url "https://downloads.sourceforge.net/project/xmds/xmds2-beta.tar.gz"
+  sha256 "bb0dc93ecd35c520f2b05c8b07e7fdcb4825a549ecef9a2358bcfd6b93807f70"
 
   # depends_on "cmake" => :build
   depends_on "python"
