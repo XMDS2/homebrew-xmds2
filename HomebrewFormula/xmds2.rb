@@ -5,10 +5,8 @@
 class Xmds2 < Formula
   desc ""
   homepage ""
-  #url "https://downloads.sourceforge.net/project/xmds/xmds2-beta.tar.gz"
-  #sha256 "bb0dc93ecd35c520f2b05c8b07e7fdcb4825a549ecef9a2358bcfd6b93807f70"
-  url "https://downloads.sourceforge.net/project/xmds/xmds-3.0.0.tar.gz"
-  sha256 "0ce0355940c75d96cba6c3a4b122e90d62eb7acf5f660deca94156a61629ff47"
+  url "https://downloads.sourceforge.net/project/xmds/xmds2-3.1.0.tar.gz"
+  sha256 "2eb15b47ad8e91c7e14ef25227bc389d3f17f8a5a44a3ca8ba7b5f999904c1e7"
 
   # depends_on "cmake" => :build
   depends_on "python"
@@ -57,11 +55,15 @@ class Xmds2 < Formula
     url "https://pypi.python.org/packages/16/4a/b085a04d6dad79aa5c00c65c9b2bbcb2c6c22e5ac341e7968e0ad2c57e2f/lxml-4.3.0.tar.gz"
     sha256 "d1e111b3ab98613115a208c1017f266478b0ab224a67bc8eac670fa0bad7d488"
   end
-
-  # We need h5py for the testsuite
+  
+  
+  # We need h5py for the test suite (do we need it for xsilgraphics too?!)
+  # Suddenly it appears that Homebrew can't install h5py, and so far I can't fix it.
+  # Since this breaks the install, don't install h5py; shouldn't matter since anyone
+  # who's running the test suite on a Mac will have done a manual install
   #resource "h5py" do
-  #  url "https://pypi.python.org/packages/43/27/a6e7dcb8ae20a4dbf3725321058923fec262b6f7835179d78ccc8d98deec/h5py-2.9.0.tar.gz"
-  #  sha256 "9d41ca62daf36d6b6515ab8765e4c8c4388ee18e2a665701fef2b41563821002"
+  #  url "https://files.pythonhosted.org/packages/5f/97/a58afbcf40e8abecededd9512978b4e4915374e5b80049af082f49cebe9a/h5py-2.10.0.tar.gz"
+  #  sha256 "84412798925dc870ffd7107f045d7659e60f5d46d1c70c700375248bf6bf512d"
   #end
 
   include Language::Python::Virtualenv
